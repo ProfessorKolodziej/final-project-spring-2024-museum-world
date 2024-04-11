@@ -27,18 +27,49 @@ html {
 h1 {
     font-family: 'Bodoni Moda', sans-serif;
     font-size: 16vw;
+    color: white;
 }
 
 h2 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 8vw;
+}
+
+h3 {
+    font-family: 'Bodoni Moda', sans-serif;
     font-size: 6.5vw;
 }
 
+h4 {
+    font-family: 'Judson', sans-serif;
+    font-size: 4vw;
+}
+
+.titlecontainer {
+    width: 100%;
+    height: 553px;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .scroll-signifier {
-    background-color: beige;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    right: 0;
 }
 
 .scroll-down {
@@ -52,11 +83,6 @@ h2 {
     max-width: 5%;
 }
 
-a {
-    text-decoration: none;
-    font-family: 'Judson', sans-serif;
-}
-
 ul {
     padding-left: 0;
     list-style-type: none;
@@ -65,4 +91,31 @@ ul {
     gap: 5%;
     justify-content: center;
     align-items: center;
+    font-size: 3vw;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.linksbutton {
+    text-decoration: none;
+}
+
+.museum-about-button,
+.explore,
+.Back,
+.MapPage {
+    text-decoration: none;
+    font-family: 'Judson', sans-serif;
+    font-size: 5vw;
+}
+
+p {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Jacques Francois', sans-serif;
+    font-size: 4vw;
+}
+
+img {
+    max-width: 100%;
 }
