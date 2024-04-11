@@ -1,0 +1,219 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+	.prototype {
+		background-image: url(../images/museum-back.jpg);
+		background-position: center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 30px;
+	}
+
+	.prototype-main {
+		padding-top: 165px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.mobile-button,
+	.tablet-button,
+	.desktop-button {
+		display: inline-block;
+		font-size: 5.6vw;
+		font-family: 'Judson', sans-serif;
+		background-color: #FFFFFF;
+		border: 3px solid #B4C7F8;
+		color: #1E1E1E;
+		width: 40%;
+		height: 8%;
+		padding: 4px 0px;
+		cursor: pointer;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+	}
+
+	.prototype-home {
+		margin-top: 144px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: auto;
+	}
+
+	.prototype-home-button {
+		display: inline-block;
+		font-size: 5.6vw;
+		font-family: 'Judson', sans-serif;
+		background-color: #B4C7F8;
+		color: #000000;
+		width: 19%;
+		height: 4%;
+		border-radius: 12px;
+		padding: 4px 4px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	.prototype {
+		background-image: url(../images/museum-back.jpg);
+		background-position: center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 289px;
+		padding-bottom: 81px;
+	}
+
+	.prototype-main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
+
+	.mobile-button,
+	.tablet-button,
+	.desktop-button {
+		display: inline-block;
+		font-size: 4.5vw;
+		font-family: 'Judson', sans-serif;
+		background-color: #FFFFFF;
+		border: 3px solid #B4C7F8;
+		color: #1E1E1E;
+		width: 32.5%;
+		height: 8%;
+		padding: 4px 0px;
+		cursor: pointer;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+	}
+
+	.prototype-home {
+		margin-top: 170px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.prototype-home-button {
+		display: inline-block;
+		font-size: 4.5vw;
+		font-family: 'Judson', sans-serif;
+		background-color: #B4C7F8;
+		color: #000000;
+		width: 19%;
+		height: 80;
+		border-radius: 12px;
+		padding: 4px 4px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.prototype {
+		background-image: url(../images/museum-back.jpg);
+		background-position: center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 208px;
+		padding-bottom: 60px;
+	}
+
+	.prototype-main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	.mobile-button,
+	.tablet-button,
+	.desktop-button {
+		display: inline-block;
+		font-size: 35px;
+		font-family: 'Judson', sans-serif;
+		background-color: #FFFFFF;
+		border: 3px solid #B4C7F8;
+		color: #1E1E1E;
+		width: 250px;
+		height: 80px;
+		padding: 4px 0px;
+		cursor: pointer;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		transition: background-color 0.3s ease, transform 0.3s ease;
+	}
+
+	.mobile-button:hover {
+		background-color: #B4C7F8;
+		font-size: 32px;
+	}
+
+	.tablet-button:hover {
+		background-color: #B4C7F8;
+		font-size: 32px;
+	}
+
+	.desktop-button:hover {
+		background-color: #B4C7F8;
+		font-size: 32px;
+	}
+
+	.prototype-home {
+		margin-top: 153px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: auto;
+	}
+
+	.prototype-home-button {
+		display: inline-block;
+		font-size: 35px;
+		font-family: 'Judson', sans-serif;
+		background-color: #B4C7F8;
+		color: #000000;
+		width: 107px;
+		height: 80;
+		border-radius: 12px;
+		padding: 4px 4px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+}

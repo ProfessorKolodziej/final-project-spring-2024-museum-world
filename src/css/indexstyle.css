@@ -1,0 +1,244 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+	.homepage {
+		padding-top: 135px;
+		padding-bottom: 88px;
+		background-color: #E2EAFF;
+		max-width: 100%;
+		position: relative;
+	}
+
+	.homepage-about-button1 {
+		position: absolute;
+		top: 10px;
+		right: 6px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.homepage-about-button2 {
+		display: none;
+	}
+
+	.homepage-pic {
+		max-width: 80%;
+		max-height: 20%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.homepage-title {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 5px;
+		text-decoration: underline;
+		text-decoration-color: #FFFFFF;
+		text-decoration-thickness: 1.5vw;
+		text-underline-offset: 1px;
+	}
+
+	.start-button-container {
+		display: grid;
+		place-items: center;
+	}
+
+	.start-button {
+		display: inline-block;
+		background-color: #FFFFFF;
+		color: #1E1E1E;
+		width: 38%;
+		border-radius: 12px;
+		padding: 2px 2px;
+		margin-top: 102px;
+		margin-bottom: auto;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	/*fonts*/
+	.homepage-title {
+		font-size: 7.5vw;
+		font-family: 'Bodoni Moda', sans-serif;
+	}
+
+	.start-button {
+		font-size: 6vw;
+		font-family: 'Judson', sans-serif;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+	.homepage {
+		padding-top: 160px;
+		padding-bottom: 77px;
+		background-color: #E2EAFF;
+		position: relative;
+	}
+
+	.homepage-about-button1 {
+		position: absolute;
+		top: 18px;
+		right: 5px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.homepage-about-button2 {
+		display: none;
+	}
+
+	.homepage-title {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 12px;
+		margin-bottom: 0px;
+		text-decoration: underline;
+		text-decoration-color: #FFFFFF;
+		text-decoration-thickness: 1vw;
+		text-underline-offset: 1px;
+	}
+
+	.homepage-pic {
+		width: 76%;
+		height: 25%;
+		max-width: 586px;
+		max-height: 251px;
+		margin-top: 10px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.start-button-container {
+		display: grid;
+		place-items: center;
+	}
+
+	.start-button {
+		display: inline-block;
+		background-color: #FFFFFF;
+		color: #1E1E1E;
+		width: 30%;
+		border-radius: 12px;
+		padding: 2px 2px;
+		margin-top: 182px;
+		margin-bottom: auto;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	/*fonts*/
+	.homepage-title {
+		font-size: 6vw;
+		font-family: 'Bodoni Moda', sans-serif;
+	}
+
+	.start-button {
+		font-size: 4.5vw;
+		font-family: 'Judson', sans-serif;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.homepage {
+		padding-top: 80px;
+		padding-bottom: 85.5px;
+		background-color: #E2EAFF;
+		position: relative;
+	}
+
+	.homepage-about-button1 {
+		display: none;
+	}
+
+	.homepage-about-button2 {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: 149px;
+		height: 50px;
+	}
+
+	.homepage-title {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 28px;
+		text-decoration: underline;
+		text-decoration-color: #FFFFFF;
+		text-decoration-thickness: 10px;
+		text-underline-offset: 1px;
+	}
+
+	.homepage-pic {
+		min-width: 700px;
+		width: 60%;
+		height: 333px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.start-button-container {
+		display: grid;
+		place-items: center;
+	}
+
+	.start-button {
+		display: inline-block;
+		background-color: #FFFFFF;
+		color: #1E1E1E;
+		width: 214px;
+		border-radius: 12px;
+		padding: 2px 2px;
+		margin-top: 75px;
+		margin-bottom: auto;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	/*fonts*/
+	.homepage-title {
+		font-size: 50px;
+		font-family: 'Bodoni Moda', sans-serif;
+	}
+
+	.start-button {
+		font-size: 35px;
+		font-family: 'Judson', sans-serif;
+	}
+}
