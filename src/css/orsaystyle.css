@@ -93,7 +93,6 @@ html {
         padding-bottom: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1.1fr 1.1fr 1.1fr 2.25;
     }
 
     .orsay1 {
@@ -200,8 +199,8 @@ html {
     .collections {
         padding-bottom: 30px;
         display: grid;
-        grid-template-columns: 2.3fr 2.7fr 2.3fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: 1.8fr 1.6fr 1.6fr 1.8fr;
+        grid-template-columns: 2.6fr 2.3fr 2.3fr;
     }
 
     .orsay1 {
@@ -271,7 +270,7 @@ html {
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url('../images/orsaytitleback.jpg');
+        background-image: url('../images/orsay/orsaytitleback.jpg');
         background-size: cover;
         background-position-x: 35%;
         filter: blur(1px);
@@ -299,58 +298,46 @@ html {
         padding-bottom: 30px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
     }
 
-    .louvre1 {
-        grid-column: 2/span 1;
-        grid-row: 5/span 1;
+    .orsay1 {
+        grid-column: 1/span 2;
+        grid-row: 3/span 1;
     }
 
-    .louvre2 {
-        grid-column: 2/span 1;
-        grid-row: 6/span 1;
-    }
-
-    .louvre3 {
-        grid-column: 1/span 1;
-        grid-row: 1/span 1;
-    }
-
-    .louvre4 {
+    .orsay2 {
         grid-column: 1/span 2;
         grid-row: 4/span 1;
     }
 
-    .louvre5 {
-        grid-column: 1/span 1;
-        grid-row: 5/span 3;
-    }
-
-    .louvre6 {
-        grid-column: 1/span 1;
-        grid-row: 3/span 1;
-    }
-
-    .louvre7 {
-        grid-column: 2/span 1;
-        grid-row: 7/span 1;
-    }
-
-    .louvre8 {
-        grid-column: 2/span 1;
-        grid-row: 2/span 2;
-        object-position: top;
-    }
-
-    .louvre9 {
+    .orsay3 {
         grid-column: 2/span 1;
         grid-row: 1/span 1;
     }
 
-    .louvre10 {
+    .orsay4 {
         grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+
+    .orsay5 {
+        grid-column: 1/span 2;
+        grid-row: 5/span 1;
+    }
+
+    .orsay6 {
+        grid-column: 1/span 2;
         grid-row: 2/span 1;
+    }
+
+    .orsay7 {
+        grid-column: 1/span 1;
+        grid-row: 6/span 1;
+    }
+
+    .orsay8 {
+        grid-column: 2/span 1;
+        grid-row: 6/span 1;
     }
 
     .citynote {

@@ -609,13 +609,13 @@ html {
         flex: 3;
         margin-right: 20px;
         margin-left: 20px;
-        height: 90vh;
+        height: 110vh;
     }
 
     .collections-all {
         flex: 2;
         margin-top: 0;
-        height: 89vh;
+        height: 110vh;
         overflow: auto;
     }
 

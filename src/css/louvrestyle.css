@@ -89,7 +89,7 @@ html {
 		padding-bottom: 20px;
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: 100px 100px 150px 150px 150px 150px;
+		grid-template-rows: 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
 	}
 
 	.louvre1 {
@@ -206,7 +206,6 @@ html {
 		padding-bottom: 30px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 180px 160px 160px 180px 250px;
 	}
 
 	.louvre1 {
@@ -253,6 +252,7 @@ html {
 	.louvre9 {
 		grid-column: 2/span 1;
 		grid-row: 2/span 2;
+		object-position: 20%;
 	}
 
 	.louvre10 {
@@ -315,7 +315,6 @@ html {
 		padding-bottom: 30px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 400px 200px 200px 350px 200px 200px 200px;
 	}
 
 	.louvre1 {
