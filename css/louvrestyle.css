@@ -1,0 +1,334 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.title-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 553px;
+}
+
+.title-container::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url('../images/louvre/louvretitleback.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: blur(1px);
+	transform: scale(1.1);
+	z-index: -1;
+}
+
+a {
+	color: white;
+	background-color: #3976CE;
+}
+
+.subtitle-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 135px;
+}
+
+.subtitle-container::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url('../images/louvre/louvretitleback.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+	transform: scale(1.1);
+	z-index: -1;
+}
+
+.museum-intro {
+	background-color: #E2EAFF;
+	padding: 2%;
+	border-radius: 12px;
+	margin-bottom: 0;
+}
+
+.collections-all {
+	background-color: #E8E8E8;
+}
+
+@media screen and (width <= 320px) {
+	.collections {
+		padding-bottom: 20px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+	}
+
+	.louvre1 {
+		grid-column: 1/span 3;
+		grid-row: 1/span 1;
+	}
+
+	.louvre2 {
+		grid-column: 1/span 3;
+		grid-row: 2/span 1;
+	}
+
+	.louvre3 {
+		grid-column: 4/span 3;
+		grid-row: 1/span 2;
+	}
+
+	.louvre4 {
+		grid-column: 1/span 6;
+		grid-row: 3/span 1;
+	}
+
+	.louvre5 {
+		grid-column: 1/span 2;
+		grid-row: 4/span 1;
+	}
+
+	.louvre6 {
+		grid-column: 3/span 4;
+		grid-row: 4/span 1;
+		object-position: 80%;
+	}
+
+	.louvre7 {
+		grid-column: 1/span 4;
+		grid-row: 5/span 1;
+	}
+
+	.louvre8 {
+		grid-column: 5/span 2;
+		grid-row: 5/span 1;
+		object-position: top;
+	}
+
+	.louvre9 {
+		grid-column: 1/span 2;
+		grid-row: 6/span 1;
+		object-position: 20%;
+	}
+
+	.louvre10 {
+		grid-column: 3/span 4;
+		grid-row: 6/span 1;
+	}
+}
+
+.cityname {
+	background-color: #E2EAFF;
+}
+
+.citynote::after {
+	content: "";
+	background-color: #E2EAFF;
+}
+
+.city2 {
+	background-color: #F1F7FF;
+}
+
+@media screen and (width >= 321px) {
+	.title-container {
+		height: 872px;
+	}
+
+	.subtitle-container::before {
+		display: none;
+	}
+
+	.museumname {
+		color: #222A4F;
+	}
+
+	.collections {
+		padding-bottom: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.louvre1 {
+		grid-column: 1/span 1;
+		grid-row: 2/span 1;
+	}
+
+	.louvre2 {
+		grid-column: 1/span 2;
+		grid-row: 1/span 1;
+	}
+
+	.louvre3 {
+		grid-column: 3/span 1;
+		grid-row: 1/span 2;
+	}
+
+	.louvre4 {
+		grid-column: 1/span 2;
+		grid-row: 5/span 1;
+	}
+
+	.louvre5 {
+		grid-column: 3/span 1;
+		grid-row: 3/span 2;
+	}
+
+	.louvre6 {
+		grid-column: 1/span 1;
+		grid-row: 3/span 1;
+	}
+
+	.louvre7 {
+		grid-column: 2/span 1;
+		grid-row: 4/span 1;
+	}
+
+	.louvre8 {
+		grid-column: 3/span 1;
+		grid-row: 5/span 1;
+		object-position: top;
+	}
+
+	.louvre9 {
+		grid-column: 2/span 1;
+		grid-row: 2/span 2;
+		object-position: 20%;
+	}
+
+	.louvre10 {
+		grid-column: 1/span 1;
+		grid-row: 4/span 1;
+	}
+
+	.cityname {
+		background-color: #F1F7FF;
+	}
+
+	.citynote {
+		color: white;
+		background-color: #3976CE;
+		padding: 3px;
+	}
+
+	.city1,
+	.city2 {
+		background-color: #F1F7FF;
+	}
+}
+
+@media screen and (width >= 769px) {
+	.title-container {
+		height: 872px;
+	}
+
+	.museumname {
+		color: #222A4F;
+	}
+
+	.museum-intro {
+		background-color: #E2EAFF;
+		padding: 2vh;
+		border-radius: 12px;
+	}
+
+	.collections-all {
+		background-color: white;
+	}
+
+	.collections {
+		padding-bottom: 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.louvre1 {
+		grid-column: 2/span 1;
+		grid-row: 5/span 1;
+	}
+
+	.louvre2 {
+		grid-column: 2/span 1;
+		grid-row: 6/span 1;
+	}
+
+	.louvre3 {
+		grid-column: 1/span 1;
+		grid-row: 1/span 1;
+	}
+
+	.louvre4 {
+		grid-column: 1/span 2;
+		grid-row: 4/span 1;
+		object-position: top;
+	}
+
+	.louvre5 {
+		grid-column: 2/span 1;
+		grid-row: 2/span 2;
+	}
+
+	.louvre6 {
+		grid-column: 1/span 1;
+		grid-row: 3/span 1;
+	}
+
+	.louvre7 {
+		grid-column: 2/span 1;
+		grid-row: 7/span 1;
+	}
+
+	.louvre8 {
+		grid-column: 1/span 1;
+		grid-row: 5/span 3;
+		object-position: top;
+	}
+
+	.louvre9 {
+		grid-column: 2/span 1;
+		grid-row: 1/span 1;
+	}
+
+	.louvre10 {
+		grid-column: 1/span 1;
+		grid-row: 2/span 1;
+	}
+
+	.citynote {
+		color: white;
+		background-color: #3976CE;
+		padding: 3px;
+	}
+
+	.city1,
+	.city2 {
+		background-color: #F1F7FF;
+	}
+}

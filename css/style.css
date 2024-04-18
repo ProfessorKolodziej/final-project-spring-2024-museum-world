@@ -1,0 +1,590 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 16vw;
+    color: white;
+}
+
+h2 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 8vw;
+}
+
+h3,
+h4,
+h5 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 6.5vw;
+}
+
+h6 {
+    font-family: Judson, sans-serif;
+    font-size: 5vw;
+}
+
+.titlecontainer {
+    position: relative;
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+}
+
+.scroll-signifier {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.scroll-down {
+    color: white;
+    font-family: Judson, sans-serif;
+    margin-bottom: 5px;
+}
+
+.down {
+    background-color: transparent;
+    max-width: 5%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    justify-content: left;
+    align-items: center;
+    font-size: 3vw;
+    overflow-x: auto;
+    width: 96%;
+    font-family: Judson, sans-serif;
+    white-space: nowrap;
+    padding-left: 2.6%;
+}
+
+.linksbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.museum-about-button,
+.explore,
+.Back,
+.MapPage {
+    text-decoration: none;
+    font-family: Judson, sans-serif;
+    font-size: 4vw;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+p {
+    font-family: 'Jacques Francois', sans-serif;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.titlebackground {
+    display: none;
+}
+
+.museumname {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(27 27 27);
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.museum-main {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.button-container,
+.museum-about-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.collections-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.collectionsback {
+    order: 1;
+    height: 100px;
+    width: 190px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collections-title {
+    order: 2;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (width <= 768px) {
+    .collectionspic {
+        display: none;
+    }
+}
+
+.collections {
+    gap: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.collections img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.city-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cityname {
+    display: block;
+    margin: 20px auto 0;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.citynote {
+    display: block;
+    margin: 5px auto 0;
+    position: relative;
+}
+
+.citynote::after {
+    content: "";
+    position: absolute;
+    width: 105%;
+    left: -2.5%;
+    bottom: 1px;
+    height: 5px;
+    z-index: -1;
+}
+
+.city-intro img {
+    margin: 20px auto;
+    width: 70%;
+}
+
+.city2 {
+    margin: 0;
+    padding: 20px 5%;
+}
+
+.button-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media screen and (width >= 321px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    h4 {
+        font-size: 6vw;
+    }
+
+    h6 {
+        font-size: 3vw;
+    }
+
+    .scroll-down {
+        margin-bottom: 20px;
+        font-size: 3vw;
+    }
+
+    .down {
+        max-width: 3%;
+    }
+
+    ul {
+        gap: 1.5%;
+        width: 96%;
+        font-size: 2.5vw;
+    }
+
+    .museum-about-button,
+    .explore,
+    .Back,
+    .MapPage {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .museumname {
+        text-shadow: none;
+    }
+
+    .museum-main {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .titlebackground {
+        display: block;
+        width: 100%;
+    }
+
+    .subtitle-container {
+        margin-bottom: 0;
+    }
+
+    .button-container,
+    .museum-about-button {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .button-container1 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    .collections-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .collections-container {
+        padding-top: 30px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collectionsback {
+        width: 100%;
+        height: 25vh;
+        order: 2;
+    }
+
+    .collections {
+        padding-right: 2%;
+        padding-left: 2%;
+        padding-top: 30px;
+    }
+
+    .collections img {
+        margin: 0;
+    }
+
+    .city-intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .city-container {
+        order: 2;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cityname {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .citynote {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .city-intro img {
+        order: 1;
+        margin-top: 30px;
+        width: 40%;
+        margin-right: 3%;
+        margin-left: 10%;
+    }
+
+    .city2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .city-main {
+        columns: 2;
+    }
+
+    .button-container2 {
+        grid-column: 1/span 2;
+        grid-row: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (width >= 769px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .subtitle-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    h6 {
+        font-size: 2vw;
+    }
+
+    .scroll-down {
+        margin-bottom: 30px;
+        font-size: 3vw;
+    }
+
+    .down {
+        max-width: 3%;
+    }
+
+    ul {
+        display: none;
+    }
+
+    /* ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5%;
+        justify-content: left;
+        align-items: center;
+        font-size: 2.5vw;
+        overflow-x: auto;
+        width: 95%;
+        font-family: 'Judson', sans-serif;
+        white-space: nowrap;
+        padding-left: 2.6%;
+    } */
+
+    .linksbutton {
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px;
+        border-radius: 12px;
+    }
+
+    .museum-about-button,
+    .explore,
+    .Back,
+    .MapPage {
+        font-size: 1.5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    .titlebackground {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .subtitle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .museum-main {
+        flex: 3;
+        margin-right: 20px;
+        margin-left: 20px;
+        height: 110vh;
+    }
+
+    .museum-intro {
+        margin-bottom: 0;
+    }
+
+    .collections-all {
+        flex: 2;
+        margin-top: 0;
+        height: 110vh;
+        overflow: auto;
+    }
+
+    .collections-container {
+        display: none;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .button-container1 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .collectionsback {
+        display: none;
+    }
+
+    .collectionspic {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+
+    .collections {
+        padding-right: 20px;
+        padding-top: 0;
+    }
+
+    .collections img {
+        margin: 0;
+    }
+
+    .city-container {
+        order: 2;
+        width: 40%;
+    }
+
+    .cityname {
+        margin-top: 30px;
+    }
+
+    .city-intro img {
+        order: 1;
+        margin-top: 30px;
+        width: 40%;
+        margin-right: 1%;
+        margin-left: 15%;
+    }
+
+    .city2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .city-main {
+        columns: 2;
+    }
+
+    .button-container2 {
+        grid-column: 1/span 2;
+        grid-row: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}
