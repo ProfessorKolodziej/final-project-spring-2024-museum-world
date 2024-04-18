@@ -1,14 +1,20 @@
 # Final Project (Replace with your project name)
 
+World of Museums.
+
 ## Description
 
-Please add a brief description of your final project here.
+This final project consists of a series of interactive introductory pages that spotlight a selection of the world’s most celebrated museums and their collections. These museums are distinguished not only by their extensive collections but also by their historical significance and architectural marvels. There is also a seperated section about the location of the museum on each page. The overall goal of this project is to engage and inform the audience about these cultural treasures.
+
 
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
-- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
+- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/museum-world/`.
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
+- [wireframes] (https://www.figma.com/file/PDxdLhMkVAdq3pDAHusl1N/Prototyping-Demo-using-Bootstrap-5-UI-Kit-(Community)---Hongjin?type=design&node-id=5795%3A5&mode=design&t=spfNJ2fSrGQojtoA-1)
+- [prototypes] (https://www.figma.com/file/BY5fU3chqn8zKZ5QlJXcVv/Final-Prototype---Hongjin-Su?type=design&node-id=7867%3A259&mode=design&t=pXNfmSNnAXrNFR3B-1)
+
 
 ## How to Use This Repository
 

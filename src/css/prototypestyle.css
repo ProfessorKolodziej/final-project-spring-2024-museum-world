@@ -17,6 +17,10 @@ to help you out.
 	--size-xl: 1200px;
 */
 
+* {
+	box-sizing: border-box;
+}
+
 body,
 html {
 	margin: 0;
@@ -24,196 +28,133 @@ html {
 	height: 100%;
 }
 
-@media screen and (max-width: 320px) {
-	.prototype {
-		background-image: url(../images/museum-back.jpg);
-		background-position: center bottom;
-		background-size: cover;
-		background-repeat: no-repeat;
-		padding-bottom: 30px;
-	}
-
-	.prototype-main {
-		padding-top: 165px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 40px;
-	}
-
-	.mobile-button,
-	.tablet-button,
-	.desktop-button {
-		display: inline-block;
-		font-size: 5.6vw;
-		font-family: 'Judson', sans-serif;
-		background-color: #FFFFFF;
-		border: 3px solid #B4C7F8;
-		color: #1E1E1E;
-		width: 40%;
-		height: 8%;
-		padding: 4px 0px;
-		cursor: pointer;
-		text-align: center;
-		align-content: center;
-		text-decoration: none;
-	}
-
-	.prototype-home {
-		margin-top: 144px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: auto;
-	}
-
-	.prototype-home-button {
-		display: inline-block;
-		font-size: 5.6vw;
-		font-family: 'Judson', sans-serif;
-		background-color: #B4C7F8;
-		color: #000000;
-		width: 19%;
-		height: 4%;
-		border-radius: 12px;
-		padding: 4px 4px;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
-	}
+.prototype {
+	background-image: url("../images/museum-back.jpg");
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 5.3%;
+	padding-top: 56%;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.prototype-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.mobile-button,
+.tablet-button,
+.desktop-button {
+	display: inline-block;
+	font-size: 5.6vw;
+	font-family: Judson, sans-serif;
+	background-color: #FFF;
+	border: 3px solid #B4C7F8;
+	color: #1E1E1E;
+	width: 40%;
+	height: 8%;
+	padding: 4px 0;
+	cursor: pointer;
+	text-align: center;
+	align-content: center;
+	text-decoration: none;
+}
+
+.prototype-home {
+	margin-top: 144px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: auto;
+}
+
+.prototype-home-button {
+	display: inline-block;
+	font-size: 5.6vw;
+	font-family: Judson, sans-serif;
+	background-color: #B4C7F8;
+	color: #000;
+	width: 19%;
+	height: 4%;
+	border-radius: 12px;
+	padding: 4px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+}
+
+@media screen and (width >= 321px) {
 	.prototype {
-		background-image: url(../images/museum-back.jpg);
-		background-position: center bottom;
-		background-size: cover;
-		background-repeat: no-repeat;
-		padding-top: 289px;
-		padding-bottom: 81px;
+		padding-top: 35%;
+		padding-bottom: 8%;
+
 	}
 
 	.prototype-main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		gap: 60px;
 	}
 
 	.mobile-button,
 	.tablet-button,
 	.desktop-button {
-		display: inline-block;
 		font-size: 4.5vw;
-		font-family: 'Judson', sans-serif;
-		background-color: #FFFFFF;
-		border: 3px solid #B4C7F8;
-		color: #1E1E1E;
 		width: 32.5%;
 		height: 8%;
-		padding: 4px 0px;
-		cursor: pointer;
-		text-align: center;
-		align-content: center;
-		text-decoration: none;
 	}
 
 	.prototype-home {
 		margin-top: 170px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	.prototype-home-button {
-		display: inline-block;
 		font-size: 4.5vw;
-		font-family: 'Judson', sans-serif;
-		background-color: #B4C7F8;
-		color: #000000;
 		width: 19%;
-		height: 80;
-		border-radius: 12px;
-		padding: 4px 4px;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
 	}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
 	.prototype {
-		background-image: url(../images/museum-back.jpg);
-		background-position: center bottom;
-		background-size: cover;
-		background-repeat: no-repeat;
-		padding-top: 208px;
+		padding-top: 256px;
 		padding-bottom: 60px;
 	}
 
 	.prototype-main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		gap: 40px;
 	}
 
 	.mobile-button,
 	.tablet-button,
 	.desktop-button {
-		display: inline-block;
-		font-size: 35px;
-		font-family: 'Judson', sans-serif;
-		background-color: #FFFFFF;
-		border: 3px solid #B4C7F8;
-		color: #1E1E1E;
+		font-size: 2.7vw;
 		width: 250px;
 		height: 80px;
-		padding: 4px 0px;
-		cursor: pointer;
-		text-align: center;
-		align-content: center;
-		text-decoration: none;
 		transition: background-color 0.3s ease, transform 0.3s ease;
 	}
 
 	.mobile-button:hover {
 		background-color: #B4C7F8;
-		font-size: 32px;
+		font-size: 2.5vw;
 	}
 
 	.tablet-button:hover {
 		background-color: #B4C7F8;
-		font-size: 32px;
+		font-size: 2.5vw;
 	}
 
 	.desktop-button:hover {
 		background-color: #B4C7F8;
-		font-size: 32px;
+		font-size: 2.5vw;
 	}
 
 	.prototype-home {
 		margin-top: 153px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: auto;
 	}
 
 	.prototype-home-button {
-		display: inline-block;
-		font-size: 35px;
-		font-family: 'Judson', sans-serif;
-		background-color: #B4C7F8;
-		color: #000000;
+		font-size: 27px;
 		width: 107px;
-		height: 80;
-		border-radius: 12px;
-		padding: 4px 4px;
-		cursor: pointer;
-		text-align: center;
-		text-decoration: none;
 	}
 }

@@ -17,6 +17,10 @@ to help you out.
 	--size-xl: 1200px;
 */
 
+* {
+	box-sizing: border-box;
+}
+
 body,
 html {
 	margin: 0;
@@ -24,67 +28,61 @@ html {
 	height: 100%;
 }
 
-@media screen and (max-width: 320px) {
-	.title-container {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		height: 553px;
-	}
+.title-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 553px;
+}
 
-	.title-container::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-image: url('../images/louvre/louvretitleback.jpg');
-		background-size: cover;
-		background-position: center;
-		filter: blur(1px);
-		transform: scale(1.1);
-		z-index: -1;
-	}
+.title-container::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url('../images/louvre/louvretitleback.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: blur(1px);
+	transform: scale(1.1);
+	z-index: -1;
+}
 
-	a {
-		color: white;
-		background-color: #3976CE;
-	}
+a {
+	color: white;
+	background-color: #3976CE;
+}
 
-	.subtitle-container {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		height: 135px;
-	}
+.subtitle-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 135px;
+}
 
-	.subtitle-container::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-image: url('../images/louvre/louvretitleback.jpg');
-		background-size: cover;
-		background-position: center;
-		opacity: 70%;
-		transform: scale(1.1);
-		z-index: -1;
-	}
+.subtitle-container::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url('../images/louvre/louvretitleback.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+	transform: scale(1.1);
+	z-index: -1;
+}
 
-	.museum-intro {
-		background-color: #E2EAFF;
-		padding: 2%;
-		border-radius: 12px;
-		margin-bottom: 0;
-	}
+.museum-intro {
+	background-color: #E2EAFF;
+	padding: 2%;
+	border-radius: 12px;
+	margin-bottom: 0;
+}
 
-	.collections-all {
-		background-color: #E8E8E8;
-	}
+.collections-all {
+	background-color: #E8E8E8;
+}
 
+@media screen and (width <= 320px) {
 	.collections {
 		padding-bottom: 20px;
 		display: grid;
@@ -144,62 +142,32 @@ html {
 		grid-column: 3/span 4;
 		grid-row: 6/span 1;
 	}
-
-	.cityname {
-		background-color: #E2EAFF;
-	}
-
-	.citynote::after {
-		content: "";
-		background-color: #E2EAFF;
-	}
-
-	.city2 {
-		background-color: #F1F7FF;
-	}
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.cityname {
+	background-color: #E2EAFF;
+}
+
+.citynote::after {
+	content: "";
+	background-color: #E2EAFF;
+}
+
+.city2 {
+	background-color: #F1F7FF;
+}
+
+@media screen and (width >= 321px) {
 	.title-container {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
 		height: 872px;
 	}
 
-	.title-container::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-image: url('../images/louvre/louvretitleback.jpg');
-		background-size: cover;
-		background-position: center;
-		filter: blur(1px);
-		transform: scale(1.1);
-		z-index: -1;
-	}
-
-	a {
-		color: white;
-		background-color: #3976CE;
+	.subtitle-container::before {
+		display: none;
 	}
 
 	.museumname {
 		color: #222A4F;
-	}
-
-	.museum-intro {
-		background-color: #E2EAFF;
-		padding: 2%;
-		border-radius: 12px;
-		margin-bottom: 0;
-	}
-
-	.collections-all {
-		background-color: #E8E8E8;
 	}
 
 	.collections {
@@ -260,6 +228,10 @@ html {
 		grid-row: 4/span 1;
 	}
 
+	.cityname {
+		background-color: #F1F7FF;
+	}
+
 	.citynote {
 		color: white;
 		background-color: #3976CE;
@@ -272,32 +244,9 @@ html {
 	}
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
 	.title-container {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
 		height: 872px;
-	}
-
-	.title-container::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-image: url('../images/louvre/louvretitleback.jpg');
-		background-size: cover;
-		background-position: center;
-		filter: blur(1px);
-		transform: scale(1.1);
-		z-index: -1;
-	}
-
-	a {
-		color: white;
-		background-color: #3976CE;
 	}
 
 	.museumname {
@@ -308,7 +257,10 @@ html {
 		background-color: #E2EAFF;
 		padding: 2vh;
 		border-radius: 12px;
-		margin-bottom: 30px;
+	}
+
+	.collections-all {
+		background-color: white;
 	}
 
 	.collections {
@@ -339,8 +291,8 @@ html {
 	}
 
 	.louvre5 {
-		grid-column: 1/span 1;
-		grid-row: 5/span 3;
+		grid-column: 2/span 1;
+		grid-row: 2/span 2;
 	}
 
 	.louvre6 {
@@ -354,8 +306,8 @@ html {
 	}
 
 	.louvre8 {
-		grid-column: 2/span 1;
-		grid-row: 2/span 2;
+		grid-column: 1/span 1;
+		grid-row: 5/span 3;
 		object-position: top;
 	}
 

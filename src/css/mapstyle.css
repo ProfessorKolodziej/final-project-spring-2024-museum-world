@@ -17,6 +17,10 @@ to help you out.
 	--size-xl: 1200px;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     margin: 0;
@@ -24,187 +28,159 @@ html {
     height: 100%;
 }
 
-@media screen and (max-width: 320px) {
-    .map-page {
-        background-image: url(../images/museum-back.jpg);
-        background-position: center bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 50px;
-        padding-top: 80px;
-    }
-
-    .map-title {
-        margin-bottom: 0;
-    }
-
-    .map {
-        display: none;
-    }
-
-    .map-container {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../images/Map.png);
-        width: 280px;
-        height: 280px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-    a img {
-        max-width: 20px;
-        max-height: 20px;
-    }
-
-    .russia-button,
-    .germany-button,
-    .italy-button,
-    .vatican-button,
-    .netherlands-button,
-    .france-button,
-    .uk-button,
-    .spain-button,
-    .greece-button {
-        border: none;
-        background-color: transparent;
-        justify-content: center;
-        cursor: pointer;
-    }
-
-    .italy-button,
-    .netherlands-button,
-    .vatican-button {
-        font-family: "Judson", sans-serif;
-        color: #000000;
-        font-size: 2vw;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .greece-button {
-        grid-column: 6 /span 1;
-        grid-row: 9 /span 1;
-        margin-top: 5px;
-    }
-
-    .spain-button {
-        grid-column: 2 /span 1;
-        grid-row: 9 /span 1;
-        margin-bottom: 50px;
-    }
-
-    .uk-button {
-        grid-column: 3 /span 1;
-        grid-row: 5 /span 1;
-    }
-
-    .france-button {
-        grid-column: 3 /span 1;
-        grid-row: 8 /span 1;
-        margin-left: 20px;
-    }
-
-    .netherlands-button {
-        grid-column: 3 /span 1;
-        grid-row: 6 /span 1;
-        margin-left: 20px;
-    }
-
-    .vatican-button {
-        grid-column: 4 /span 1;
-        grid-row: 9 /span 1;
-    }
-
-    .italy-button {
-        grid-column: 4 /span 1;
-        grid-row: 8 /span 1;
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-
-    .russia-button {
-        grid-column: 7 /span 1;
-        grid-row: 3 /span 1;
-    }
-
-    .germany-button {
-        grid-row: 6 /span 1;
-        grid-column: 4 /span 1;
-    }
-
-    .map-home-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-
-    .map-home-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: auto;
-        margin-top: 40px;
-    }
-
-    .map-home {
-        display: inline-block;
-        font-size: 4.5vw;
-        font-family: 'Judson', sans-serif;
-        background-color: #F8D7DA;
-        color: #000000;
-        width: 26%;
-        height: 4%;
-        border-radius: 12px;
-        padding: 4px 4px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    /*fonts*/
-    .map-title {
-        font-size: 6vw;
-        font-family: 'Judson', sans-serif;
-        text-align: center;
-    }
+.map-page {
+    background-image: url("../images/museum-back.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 80px;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.map-title {
+    margin-bottom: 0;
+}
+
+.map-container {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/Map.png");
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+a img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.russia-button,
+.germany-button,
+.italy-button,
+.vatican-button,
+.netherlands-button,
+.france-button,
+.uk-button,
+.spain-button,
+.greece-button {
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.italy-button,
+.netherlands-button,
+.vatican-button,
+.greece-button {
+    font-family: Judson, sans-serif;
+    color: #000;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.greece-button {
+    grid-column: 6 /span 1;
+    grid-row: 9 /span 1;
+    margin-top: 5px;
+}
+
+.spain-button {
+    grid-column: 2 /span 1;
+    grid-row: 9 /span 1;
+    margin-bottom: 50px;
+}
+
+.uk-button {
+    grid-column: 3 /span 1;
+    grid-row: 5 /span 1;
+}
+
+.france-button {
+    grid-column: 3 /span 1;
+    grid-row: 8 /span 1;
+    margin-left: 20px;
+}
+
+.netherlands-button {
+    grid-column: 3 /span 1;
+    grid-row: 6 /span 1;
+    margin-left: 20px;
+}
+
+.vatican-button {
+    grid-column: 4 /span 1;
+    grid-row: 9 /span 1;
+}
+
+.italy-button {
+    grid-column: 4 /span 1;
+    grid-row: 8 /span 1;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.russia-button {
+    grid-column: 7 /span 1;
+    grid-row: 3 /span 1;
+}
+
+.germany-button {
+    grid-row: 6 /span 1;
+    grid-column: 4 /span 1;
+}
+
+.map-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: auto;
+    margin-top: 40px;
+}
+
+.map-home {
+    display: inline-block;
+    font-size: 4.5vw;
+    font-family: Judson, sans-serif;
+    background-color: #F8D7DA;
+    color: #000;
+    width: 26%;
+    height: 4%;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* fonts */
+.map-title {
+    font-size: 6vw;
+    font-family: Judson, sans-serif;
+    text-align: center;
+}
+
+@media screen and (width >= 321px) {
     .map-page {
-        background-image: url(../images/museum-back.jpg);
-        background-position: center bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 80px;
-        padding-bottom: 46px;
+        padding-top: 65px;
+        padding-bottom: 25px;
     }
 
     .map-title {
         margin: 0;
     }
 
-    .map {
-        display: none;
-    }
-
     .map-container {
         margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(../images/Map.png);
         width: 550px;
         height: 550px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(13, 1fr);
     }
@@ -214,29 +190,11 @@ html {
         max-height: 45px;
     }
 
-    .russia-button,
-    .germany-button,
     .italy-button,
+    .netherlands-button,
     .vatican-button,
-    .netherlands-button,
-    .france-button,
-    .uk-button,
-    .spain-button,
     .greece-button {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        justify-content: center;
-    }
-
-    .italy-button,
-    .netherlands-button,
-    .vatican-button {
-        font-family: "Judson", sans-serif;
-        color: #000000;
         font-size: 1.5vw;
-        text-align: center;
-        text-decoration: none;
     }
 
     .greece-button {
@@ -251,12 +209,12 @@ html {
 
     .uk-button {
         grid-column: 3 /span 1;
-        grid-row: 7 /span 1;
+        grid-row: 8 /span 1;
     }
 
     .france-button {
         grid-column: 4 /span 1;
-        grid-row: 9 /span 1;
+        grid-row: 10 /span 1;
     }
 
     .netherlands-button {
@@ -280,45 +238,17 @@ html {
     }
 
     .germany-button {
-        grid-row: 8 /span 1;
+        grid-row: 9 /span 1;
         grid-column: 5 /span 1;
     }
 
     .map-home-container {
-        display: flex;
-        justify-content: center;
         margin-top: 30px;
-    }
-
-    .map-home {
-        display: inline-block;
-        font-size: 4.5vw;
-        font-family: 'Judson', sans-serif;
-        background-color: #F8D7DA;
-        color: #000000;
-        width: 25%;
-        height: 4%;
-        border-radius: 12px;
-        padding: 4px 4px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    /*fonts*/
-    .map-title {
-        font-size: 6vw;
-        font-family: 'Judson', sans-serif;
-        text-align: center;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
     .map-page {
-        background-image: url(../images/museum-back.jpg);
-        background-position: center bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 1fr);
@@ -330,18 +260,11 @@ html {
         grid-row: 5/span 3;
     }
 
-    .map {
-        display: none;
-    }
-
     .map-container {
         grid-column: 6 /span 6;
         grid-row: 3 /span 8;
-        background-image: url(../images/Map.png);
         width: 696px;
         height: 696px;
-        background-repeat: no-repeat;
-        display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(14, 1fr);
     }
@@ -351,60 +274,40 @@ html {
         max-height: 50px;
     }
 
-    .russia-button,
-    .germany-button,
     .italy-button,
+    .netherlands-button,
     .vatican-button,
-    .netherlands-button,
-    .france-button,
-    .uk-button,
-    .spain-button,
     .greece-button {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        justify-content: center;
-        border-radius: 20px;
-    }
-
-    .italy-button,
-    .netherlands-button,
-    .vatican-button {
-        font-family: "Judson", sans-serif;
-        font-size: 1vw;
-        color: #000000;
-        text-align: center;
-        margin-left: auto;
-        margin-left: auto;
-        text-decoration: none;
+        font-size: 13px;
     }
 
     .greece-button {
-        grid-column: 8 /span 1;
+        grid-column: 7 /span 1;
         grid-row: 12 /span 1;
         margin-left: 10px;
     }
 
     .spain-button {
         grid-column: 2 /span 1;
-        grid-row: 11 /span 1;
-        margin-left: 15px;
+        grid-row: 12 /span 1;
+        margin-bottom: 10px;
     }
 
     .uk-button {
         grid-column: 3 /span 1;
-        grid-row: 7 /span 1;
+        grid-row: 8 /span 1;
         margin-left: 10px;
     }
 
     .france-button {
         grid-column: 4 /span 1;
         grid-row: 10 /span 1;
+        margin-right: 40px;
     }
 
     .netherlands-button {
         grid-column: 4 /span 1;
-        grid-row: 8 /span 1;
+        grid-row: 9 /span 1;
         z-index: 1;
     }
 
@@ -419,7 +322,7 @@ html {
     }
 
     .russia-button {
-        grid-column: 10 /span 1;
+        grid-column: 9 /span 1;
         grid-row: 4 /span 1;
     }
 
@@ -453,6 +356,10 @@ html {
         filter: hue-rotate(250deg);
     }
 
+    .greece-button:hover {
+        filter: hue-rotate(250deg);
+    }
+
     .vatican-button:hover {
         filter: hue-rotate(250deg);
     }
@@ -469,22 +376,13 @@ html {
     }
 
     .map-home {
-        display: inline-block;
         font-size: 30px;
-        font-family: 'Judson', sans-serif;
-        background-color: #F8D7DA;
-        color: #000000;
-        border-radius: 12px;
-        padding: 8px 8px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
+        width: 170px;
+        height: auto;
     }
 
-    /*fonts*/
+    /* fonts */
     .map-title {
         font-size: 40px;
-        font-family: 'Judson', sans-serif;
-        text-align: center;
     }
 }

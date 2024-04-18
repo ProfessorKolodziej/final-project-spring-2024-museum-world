@@ -24,96 +24,87 @@ html {
     height: 100%;
 }
 
-@media screen and (max-width: 320px) {
-    .netherlandsmain {
-        padding-top: 80px;
-        padding-bottom: 57px;
-    }
-
-    .netherlands-title-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../images/netherlands.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 200px;
-    }
-
-    h1 {
-        font-family: 'Bodoni Moda', sans-serif;
-        font-size: 15vw;
-    }
-
-    .netherlands-buttons {
-        display: grid;
-        place-items: center;
-    }
-
-    .rijks-button {
-        display: inline-block;
-        background-color: #3976CE;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
-        margin-top: 50px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        font-size: 6vw;
-        font-family: 'Judson', sans-serif;
-    }
-
-    .VG-button {
-        display: inline-block;
-        background-color: #E20F20;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
-        margin-top: 20px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        font-size: 6vw;
-        font-family: 'Judson', sans-serif;
-    }
-
-    .netherlands-main-map {
-        display: grid;
-        place-items: center;
-    }
-
-    .netherlands-main-mapbutton {
-        display: inline-block;
-        background-color: #EBEBEB;
-        color: #212529;
-        border-radius: 12px;
-        padding: 4px 6px;
-        margin-top: 60px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        font-size: 4.5vw;
-        font-family: 'Judson', sans-serif;
-    }
+.netherlandsmain {
+    padding-top: 80px;
+    padding-bottom: 57px;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.netherlands-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/netherlands.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 15vw;
+}
+
+.netherlands-buttons {
+    display: grid;
+    place-items: center;
+}
+
+.rijks-button {
+    display: inline-block;
+    background-color: #3976CE;
+    color: #FFF;
+    border-radius: 12px;
+    padding: 4px 6px;
+    margin-top: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 6vw;
+    font-family: Judson, sans-serif;
+}
+
+.VG-button {
+    display: inline-block;
+    background-color: #E20F20;
+    color: #FFF;
+    border-radius: 12px;
+    padding: 4px 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 6vw;
+    font-family: Judson, sans-serif;
+}
+
+.netherlands-main-map {
+    display: grid;
+    place-items: center;
+}
+
+.netherlands-main-mapbutton {
+    display: inline-block;
+    background-color: #EBEBEB;
+    color: #212529;
+    border-radius: 12px;
+    padding: 4px 6px;
+    margin-top: 60px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 4.5vw;
+    font-family: Judson, sans-serif;
+}
+
+@media screen and (width >= 321px) {
     .netherlandsmain {
-        padding-top: 80px;
-        padding-bottom: 72px;
+        padding-top: 70px;
+        padding-bottom: 42px;
     }
 
     .netherlands-title-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../images/netherlands.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 84%;
         height: 400px;
         margin-left: auto;
@@ -121,77 +112,32 @@ html {
     }
 
     h1 {
-        font-family: 'Bodoni Moda', sans-serif;
         font-size: 11vw;
     }
 
-    .netherlands-buttons {
-        display: grid;
-        place-items: center;
-    }
-
     .rijks-button {
-        display: inline-block;
-        background-color: #3976CE;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 50px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 5vw;
-        font-family: 'Judson', sans-serif;
     }
 
     .VG-button {
-        display: inline-block;
-        background-color: #E20F20;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 40px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 5vw;
-        font-family: 'Judson', sans-serif;
-    }
-
-    .netherlands-main-map {
-        display: grid;
-        place-items: center;
     }
 
     .netherlands-main-mapbutton {
-        display: inline-block;
-        background-color: #EBEBEB;
-        color: #212529;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 80px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 4vw;
-        font-family: 'Judson', sans-serif;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
     .netherlandsmain {
         padding-top: 60px;
         padding-bottom: 52px;
     }
 
     .netherlands-title-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../images/netherlands.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 50%;
         height: 400px;
         margin-left: auto;
@@ -199,41 +145,17 @@ html {
     }
 
     h1 {
-        font-family: 'Bodoni Moda', sans-serif;
         font-size: 6.5vw;
     }
 
-    .netherlands-buttons {
-        display: grid;
-        place-items: center;
-    }
-
     .rijks-button {
-        display: inline-block;
-        background-color: #3976CE;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 50px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 3vw;
-        font-family: 'Judson', sans-serif;
     }
 
     .VG-button {
-        display: inline-block;
-        background-color: #E20F20;
-        color: #FFFFFF;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 40px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 3vw;
-        font-family: 'Judson', sans-serif;
     }
 
     .netherlands-main-map {
@@ -242,16 +164,7 @@ html {
     }
 
     .netherlands-main-mapbutton {
-        display: inline-block;
-        background-color: #EBEBEB;
-        color: #212529;
-        border-radius: 12px;
-        padding: 4px 6px;
         margin-top: 80px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
         font-size: 2.5vw;
-        font-family: 'Judson', sans-serif;
     }
 }

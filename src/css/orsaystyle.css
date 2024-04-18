@@ -17,6 +17,10 @@ to help you out.
 	--size-xl: 1200px;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     margin: 0;
@@ -24,71 +28,65 @@ html {
     height: 100%;
 }
 
-@media screen and (max-width: 320px) {
-    .title-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 553px;
-    }
+.title-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 553px;
+}
 
-    .title-container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: url('../images/orsay/orsaytitleback.jpg');
-        background-size: cover;
-        background-position-x: 40%;
-        filter: blur(1px);
-        transform: scale(1.1);
-        z-index: -1;
-    }
+.title-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/orsay/orsaytitleback.jpg');
+    background-size: cover;
+    background-position-x: 40%;
+    filter: blur(1px);
+    transform: scale(1.1);
+    z-index: -1;
+}
 
-    a {
-        color: #212529;
-        background-color: #E2B898;
-    }
+a {
+    color: #212529;
+    background-color: #E2B898;
+}
 
-    .subtitle-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 135px;
-    }
+.subtitle-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 135px;
+}
 
-    .subtitle-container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: url('../images/orsay/orsaytitleback.jpg');
-        background-size: cover;
-        background-position: center;
-        opacity: 70%;
-        transform: scale(1.1);
-        z-index: -1;
-    }
+.subtitle-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/orsay/orsaytitleback.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transform: scale(1.1);
+    z-index: -1;
+}
 
-    .museum-intro {
-        background-color: #FFEBDC;
-        padding: 2%;
-        border-radius: 12px;
-        margin-bottom: 0;
-    }
+.museum-intro {
+    background-color: #FFEBDC;
+    padding: 2%;
+    border-radius: 12px;
+    margin-bottom: 0;
+}
 
-    .collections-all {
-        background-color: #F7ECE4;
-    }
+.collections-all {
+    background-color: #F7ECE4;
+}
 
-    .collections-title {
-        color: #9B521B;
-    }
+.collections-title {
+    color: #9B521B;
+}
 
+@media screen and (width <= 320px) {
     .collections {
         padding-bottom: 20px;
         display: grid;
@@ -134,66 +132,32 @@ html {
         grid-column: 2/span 1;
         grid-row: 5/span 1;
     }
-
-    .cityname {
-        background-color: #FFD79C;
-    }
-
-    .citynote::after {
-        content: "";
-        background-color: #FFD79C;
-    }
-
-    .city2 {
-        background-color: #FAFAFA;
-    }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+.cityname {
+    background-color: #FFD79C;
+}
+
+.citynote::after {
+    content: "";
+    background-color: #FFD79C;
+}
+
+.city2 {
+    background-color: #FAFAFA;
+}
+
+@media screen and (width >= 321px) {
     .title-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
         height: 872px;
     }
 
-    .title-container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: url('../images/orsay/orsaytitleback.jpg');
-        background-size: cover;
-        background-position-x: 35%;
-        filter: blur(1px);
-        transform: scale(1.1);
-        z-index: -1;
-    }
-
-    a {
-        color: #000000;
-        background-color: #E2B898;
+    .subtitle-container::before {
+        display: none;
     }
 
     .museumname {
         color: #431F03;
-    }
-
-    .museum-intro {
-        background-color: #FFEBDC;
-        padding: 2%;
-        border-radius: 12px;
-        margin-bottom: 0;
-    }
-
-    .collections-title {
-        color: #9B521B;
-    }
-
-    .collections-all {
-        background-color: #F7ECE4;
     }
 
     .collections {
@@ -243,8 +207,12 @@ html {
         grid-row: 3/span 2;
     }
 
+    .cityname {
+        background-color: #FAFAFA;
+    }
+
     .citynote {
-        color: 000000;
+        color: #000;
         background-color: #FFD79C;
         padding: 3px;
     }
@@ -255,32 +223,9 @@ html {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
     .title-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
         height: 872px;
-    }
-
-    .title-container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: url('../images/orsay/orsaytitleback.jpg');
-        background-size: cover;
-        background-position-x: 35%;
-        filter: blur(1px);
-        transform: scale(1.1);
-        z-index: -1;
-    }
-
-    a {
-        color: black;
-        background-color: #E2B898;
     }
 
     .museumname {
@@ -291,7 +236,10 @@ html {
         background-color: #FFEBDC;
         padding: 2vh;
         border-radius: 12px;
-        margin-bottom: 30px;
+    }
+
+    .collections-all {
+        background-color: white;
     }
 
     .collections {
