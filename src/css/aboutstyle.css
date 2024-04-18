@@ -86,7 +86,7 @@ html {
 	text-decoration: none;
 }
 
-@media screen and (width >= 321px) {
+@media screen and (width >=321px) {
 	.about {
 		padding-top: 35%;
 		padding-bottom: 8%;
@@ -114,7 +114,7 @@ html {
 	}
 }
 
-@media screen and (width >= 769px) {
+@media screen and (width >=769px) {
 	.about {
 		padding-top: 256px;
 		padding-bottom: 60px;
