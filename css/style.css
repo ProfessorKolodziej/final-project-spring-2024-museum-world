@@ -186,7 +186,7 @@ p {
     margin-right: auto;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <=768px) {
     .collectionspic {
         display: none;
     }
@@ -255,7 +255,7 @@ p {
     margin-top: 20px;
 }
 
-@media screen and (width >= 321px) {
+@media screen and (width >=321px) {
     h1 {
         font-size: 10vw;
     }
@@ -411,7 +411,7 @@ p {
     }
 }
 
-@media screen and (width >= 769px) {
+@media screen and (width >=769px) {
     h1 {
         font-size: 8vw;
     }
@@ -419,6 +419,9 @@ p {
     .subtitle-container {
         margin-top: 30px;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     h2 {
@@ -486,12 +489,6 @@ p {
     .titlebackground {
         width: 100%;
         margin-top: 30px;
-    }
-
-    .subtitle-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .desktop {
