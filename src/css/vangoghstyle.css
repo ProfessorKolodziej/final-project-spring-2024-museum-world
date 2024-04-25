@@ -1,0 +1,304 @@
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.title-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 553px;
+}
+
+h1 {
+    font-size: 12vw;
+}
+
+.title-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/vangogh/vgtitleback.jpg');
+    background-size: cover;
+    background-position: 55%;
+    transform: scale(1.5);
+    filter: blur(1px);
+    z-index: -1;
+}
+
+a {
+    color: black;
+    background-color: #E3F6EE;
+}
+
+.subtitle-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 135px;
+}
+
+.subtitle-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/vangogh/vgtitleback.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.museum-intro {
+    background-color: #FFFCF5;
+    padding: 2%;
+    border-radius: 12px;
+    margin-bottom: 0;
+}
+
+.collections-all {
+    background-color: #767676;
+}
+
+h4 {
+    color: white;
+}
+
+@media screen and (width <=320px) {
+    .collections {
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .vg1 {
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+
+    .vg2 {
+        grid-column: 3/span 4;
+        grid-row: 1/span 1;
+    }
+
+    .vg3 {
+        grid-column: 1/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg4 {
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg5 {
+        grid-column: 5/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg6 {
+        grid-column: 1/span 3;
+        grid-row: 3/span 2;
+    }
+
+    .vg7 {
+        grid-column: 4/span 3;
+        grid-row: 3/span 1;
+    }
+
+    .vg8 {
+        grid-column: 4/span 3;
+        grid-row: 4/span 1;
+    }
+}
+
+.cityname {
+    background-color: #E3EBFF;
+}
+
+.citynote::after {
+    content: "";
+    background-color: #E3EBFF;
+}
+
+.city2 {
+    background-color: #FCF9F6;
+}
+
+@media screen and (width >=321px) {
+    .title-container {
+        height: 100vh;
+    }
+
+    .subtitle-container::before {
+        display: none;
+    }
+
+    .museumname {
+        color: #343A40;
+    }
+
+    .collections {
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .vg1 {
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+
+    .vg2 {
+        grid-column: 3/span 4;
+        grid-row: 1/span 1;
+    }
+
+    .vg3 {
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg4 {
+        grid-column: 3/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg5 {
+        grid-column: 5/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg6 {
+        grid-column: 1/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg7 {
+        grid-column: 1/span 3;
+        grid-row: 3/span 1;
+    }
+
+    .vg8 {
+        grid-column: 4/span 3;
+        grid-row: 3/span 1;
+    }
+
+    .cityname {
+        background-color: #FCF9F6;
+    }
+
+    .citynote {
+        color: black;
+        background-color: #E3EBFF;
+        padding: 3px;
+        font-size: 2.5vw;
+    }
+
+    .city1,
+    .city2 {
+        background-color: #FFFAF4;
+    }
+}
+
+@media screen and (width >=769px) {
+    .title-container {
+        height: 872px;
+    }
+
+    .museumname {
+        color: #343A40;
+    }
+
+    .museum-intro {
+        background-color: #FFFCF5;
+        padding: 2vh;
+        border-radius: 12px;
+    }
+
+    .collections-all {
+        background-color: white;
+    }
+
+    .collections {
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vg1 {
+        grid-column: 1/span 1;
+        grid-row: 6/span 1;
+    }
+
+    .vg2 {
+        grid-column: 1/span 2;
+        grid-row: 1/span 1;
+    }
+
+    .vg3 {
+        grid-column: 2/span 1;
+        grid-row: 3/span 1;
+    }
+
+    .vg4 {
+        grid-column: 2/span 1;
+        grid-row: 6/span 1;
+    }
+
+    .vg5 {
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
+    }
+
+    .vg6 {
+        grid-column: 1/span 2;
+        grid-row: 2/span 1;
+    }
+
+    .vg7 {
+        grid-column: 1/span 2;
+        grid-row: 4/span 1;
+    }
+
+    .vg8 {
+        grid-column: 1/span 2;
+        grid-row: 5/span 1;
+    }
+
+    .citynote {
+        color: black;
+        background-color: #E3EBFF;
+        padding: 3px;
+    }
+
+    .city1,
+    .city2 {
+        background-color: #FFFAF4;
+    }
+}

@@ -5,3 +5,22 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+
+const shrinkHeaderSize = 200;
+
+function shrinkHeader() {
+    const scroll = getCurrentScroll();
+    if (scroll >= shrinkHeaderSize) {
+        document.querySelector('.title-container').classList.add('smaller');
+
+    } else {
+        document.querySelector('.title-container').classList.remove('smaller');
+
+    }
+}
+
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+}
+
+window.addEventListener("scroll", shrinkHeader);

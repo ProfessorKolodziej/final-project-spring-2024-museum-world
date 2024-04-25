@@ -10,7 +10,7 @@ This final project consists of a series of interactive introductory pages that s
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
-- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/museum-world/`.
+- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/final-project-spring-2024-museum-world/`.
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
 - [wireframes] (https://www.figma.com/file/PDxdLhMkVAdq3pDAHusl1N/Prototyping-Demo-using-Bootstrap-5-UI-Kit-(Community)---Hongjin?type=design&node-id=5795%3A5&mode=design&t=spfNJ2fSrGQojtoA-1)
 - [prototypes] (https://www.figma.com/file/BY5fU3chqn8zKZ5QlJXcVv/Final-Prototype---Hongjin-Su?type=design&node-id=7867%3A259&mode=design&t=pXNfmSNnAXrNFR3B-1)
