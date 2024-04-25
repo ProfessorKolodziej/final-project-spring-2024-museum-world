@@ -503,13 +503,15 @@ p {
     .desktop {
         display: flex;
         flex-direction: row;
+        margin-bottom: 30px;
     }
 
     .museum-main {
         flex: 3;
         margin-right: 20px;
         margin-left: 20px;
-        height: 110vh;
+        height: 120vh;
+        overflow: auto;
     }
 
     .museum-intro {
@@ -519,7 +521,7 @@ p {
     .collections-all {
         flex: 2;
         margin-top: 0;
-        height: 110vh;
+        height: 120vh;
         overflow: auto;
     }
 
@@ -548,7 +550,6 @@ p {
         width: 100%;
         height: 400px;
         object-fit: cover;
-        margin-top: 30px;
     }
 
     .collections {
