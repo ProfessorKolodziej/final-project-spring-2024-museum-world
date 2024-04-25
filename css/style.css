@@ -52,9 +52,10 @@ h6 {
     font-size: 5vw;
 }
 
-.titlecontainer {
-    position: relative;
+.title-container {
+    position: fixed;
     height: 100vh;
+    transition: height .5s ease-in;
 }
 
 .title {
@@ -414,6 +415,14 @@ p {
 @media screen and (width >=769px) {
     h1 {
         font-size: 8vw;
+    }
+
+    .title-container.smaller {
+        height: 700px;
+    }
+
+    .titlebackground {
+        display: none;
     }
 
     .subtitle-container {

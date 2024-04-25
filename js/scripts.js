@@ -6,14 +6,16 @@
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
 
-const shrinkHeaderSize = 872;
+const shrinkHeaderSize = 200;
 
 function shrinkHeader() {
     const scroll = getCurrentScroll();
     if (scroll >= shrinkHeaderSize) {
         document.querySelector('.title-container').classList.add('smaller');
+
     } else {
         document.querySelector('.title-container').classList.remove('smaller');
+
     }
 }
 
