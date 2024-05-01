@@ -33,7 +33,6 @@ h1 {
     font-family: 'Bodoni Moda', sans-serif;
     font-size: 16vw;
     color: white;
-    text-shadow: 1px 1px 2px rgb(27 27 27);
 }
 
 h2 {
@@ -497,7 +496,7 @@ p {
         cursor: pointer;
         padding: 0;
         position: fixed;
-        left: 5px;
+        left: 0;
         top: 40px;
         height: 40px;
         width: 40px;
@@ -507,8 +506,8 @@ p {
     }
 
     button img {
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
     }
 
     .more {
