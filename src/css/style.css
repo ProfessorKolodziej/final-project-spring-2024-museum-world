@@ -102,6 +102,20 @@ ul {
     padding-left: 2.6%;
 }
 
+.links {
+    position: relative;
+}
+
+.more {
+    position: absolute;
+    right: 0.5%;
+    height: 3vw;
+    width: 3vw;
+    z-index: 1;
+    bottom: 4px;
+    opacity: 60%;
+}
+
 .linksbutton {
     text-decoration: none;
     display: inline-block;
@@ -175,7 +189,7 @@ p {
 .collectionsback {
     order: 1;
     height: 100px;
-    width: 190px;
+    width: 60%;
     object-fit: cover;
     object-position: center;
 }
@@ -274,7 +288,7 @@ p {
     }
 
     h4 {
-        font-size: 6vw;
+        font-size: 7.5vw;
     }
 
     h6 {
@@ -283,11 +297,11 @@ p {
 
     .scroll-down {
         margin-bottom: 20px;
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
 
     .down {
-        max-width: 3%;
+        max-width: 4%;
     }
 
     ul {
@@ -307,6 +321,16 @@ p {
         font-size: 2.5vw;
     }
 
+    .more {
+        position: absolute;
+        right: 0.5%;
+        height: 3vw;
+        width: 3vw;
+        z-index: 1;
+        bottom: 4.5%;
+        opacity: 60%;
+    }
+
     .museumname {
         text-shadow: none;
     }
@@ -319,6 +343,8 @@ p {
     .titlebackground {
         display: block;
         width: 100vw;
+        height: 35vh;
+        object-fit: cover;
     }
 
     .subtitle-container {
@@ -472,14 +498,20 @@ p {
         position: fixed;
         left: 5px;
         top: 40px;
+        height: 40px;
+        width: 40px;
         transition: opacity 1s ease;
+        z-index: 1;
+        pointer-events: all;
     }
 
-    .links-button {
-        color: transparent;
-        position: fixed;
+    button img {
         height: 30px;
-        transition: opacity 1s ease;
+        width: 30px;
+    }
+
+    .more {
+        display: none;
     }
 
     ul {
@@ -494,12 +526,12 @@ p {
         gap: 1.5%;
         justify-content: center;
         align-items: center;
-        font-size: 1.5vw;
+        font-size: 2vw;
         overflow-x: auto;
         width: 95%;
         font-family: Judson, sans-serif;
         white-space: nowrap;
-        top: 25px;
+        top: 22px;
         z-index: 1;
     }
 

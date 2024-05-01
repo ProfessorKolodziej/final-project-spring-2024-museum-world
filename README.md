@@ -14,6 +14,8 @@ This final project consists of a series of interactive introductory pages that s
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
 - [wireframes] (https://www.figma.com/file/PDxdLhMkVAdq3pDAHusl1N/Prototyping-Demo-using-Bootstrap-5-UI-Kit-(Community)---Hongjin?type=design&node-id=5795%3A5&mode=design&t=spfNJ2fSrGQojtoA-1)
 - [prototypes] (https://www.figma.com/file/BY5fU3chqn8zKZ5QlJXcVv/Final-Prototype---Hongjin-Su?type=design&node-id=7867%3A259&mode=design&t=pXNfmSNnAXrNFR3B-1)
+- [proposal] (https://docs.google.com/document/d/1JHAnpGqsiHJZaYlupNIQ7Pv_6InYVIIwB9lC78VA5VY/edit)
+- [UXreports] (https://docs.google.com/document/d/1hJJ7CjjZqpqpez7KbY4W2q4KZOHKCUmq8l3pwkZfEMQ/edit)
 
 
 ## How to Use This Repository
