@@ -327,7 +327,6 @@ p {
         height: 3vw;
         width: 3vw;
         z-index: 1;
-        bottom: 4.5%;
         opacity: 60%;
     }
 
@@ -448,7 +447,7 @@ p {
     }
 
     .title-container.smaller {
-        height: 600px;
+        height: 650px;
     }
 
     .titlebackground {
