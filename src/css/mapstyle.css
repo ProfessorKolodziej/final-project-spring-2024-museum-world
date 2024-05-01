@@ -39,6 +39,9 @@ html {
 
 .map-title {
     margin-bottom: 0;
+    font-size: 6vw;
+    font-family: Judson, sans-serif;
+    text-align: center;
 }
 
 .map-container {
@@ -160,13 +163,6 @@ a img {
     text-decoration: none;
 }
 
-/* fonts */
-.map-title {
-    font-size: 6vw;
-    font-family: Judson, sans-serif;
-    text-align: center;
-}
-
 @media screen and (width >=321px) {
     .map-page {
         padding-top: 65px;
@@ -198,7 +194,7 @@ a img {
     }
 
     .greece-button {
-        grid-column: 8 /span 1;
+        grid-column: 7 /span 1;
         grid-row: 11 /span 1;
     }
 
@@ -219,7 +215,7 @@ a img {
 
     .netherlands-button {
         grid-column: 4 /span 1;
-        grid-row: 8 /span 1;
+        grid-row: 9 /span 1;
     }
 
     .vatican-button {
@@ -258,6 +254,7 @@ a img {
     .map-title {
         grid-column: 2/span 3;
         grid-row: 5/span 3;
+        font-size: 40px;
     }
 
     .map-container {
@@ -379,10 +376,5 @@ a img {
         font-size: 30px;
         width: 170px;
         height: auto;
-    }
-
-    /* fonts */
-    .map-title {
-        font-size: 40px;
     }
 }

@@ -233,6 +233,11 @@ a {
         background-color: white;
     }
 
+    a {
+        color: #212529;
+        background-color: #FECBA1;
+    }
+
     .collections {
         padding-bottom: 30px;
         display: grid;
