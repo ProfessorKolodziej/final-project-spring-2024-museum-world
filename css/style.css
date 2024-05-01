@@ -191,6 +191,10 @@ p {
     .collectionspic {
         display: none;
     }
+
+    #toggledButton {
+        display: none;
+    }
 }
 
 .collections {
@@ -314,7 +318,7 @@ p {
 
     .titlebackground {
         display: block;
-        width: 100%;
+        width: 100vw;
     }
 
     .subtitle-container {
@@ -423,6 +427,8 @@ p {
 
     .titlebackground {
         display: none;
+        width: 100%;
+        margin-top: 30px;
     }
 
     .subtitle-container {
@@ -458,24 +464,44 @@ p {
         max-width: 3%;
     }
 
+    #toggledButton {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        position: fixed;
+        left: 5px;
+        top: 40px;
+        transition: opacity 1s ease;
+    }
+
+    .links-button {
+        color: transparent;
+        position: fixed;
+        height: 30px;
+        transition: opacity 1s ease;
+    }
+
     ul {
         display: none;
     }
 
-    /* ul {
+    .show {
+        position: fixed;
         list-style-type: none;
         display: flex;
         flex-direction: row;
         gap: 1.5%;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         overflow-x: auto;
         width: 95%;
-        font-family: 'Judson', sans-serif;
+        font-family: Judson, sans-serif;
         white-space: nowrap;
-        padding-left: 2.6%;
-    } */
+        top: 25px;
+        z-index: 1;
+    }
 
     .linksbutton {
         text-decoration: none;
@@ -488,16 +514,11 @@ p {
     .explore,
     .Back,
     .MapPage {
-        font-size: 1.5vw;
+        font-size: clamp(20px, 1.5vw, 25px);
     }
 
     p {
-        font-size: 1.5vw;
-    }
-
-    .titlebackground {
-        width: 100%;
-        margin-top: 30px;
+        font-size: clamp(20px, 1.5vw, 25px);
     }
 
     .desktop {
@@ -509,9 +530,9 @@ p {
     .museum-main {
         flex: 3;
         margin-right: 20px;
-        margin-left: 20px;
+        margin-left: 40px;
         height: 120vh;
-        overflow: auto;
+        overflow: scroll;
     }
 
     .museum-intro {
