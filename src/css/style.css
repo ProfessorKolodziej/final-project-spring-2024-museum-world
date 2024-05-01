@@ -33,6 +33,7 @@ h1 {
     font-family: 'Bodoni Moda', sans-serif;
     font-size: 16vw;
     color: white;
+    text-shadow: 1px 1px 2px rgb(27 27 27);
 }
 
 h2 {
